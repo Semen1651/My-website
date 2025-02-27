@@ -1,0 +1,18 @@
+@mixin flexbox($jc: normal, $ai: normal, $drn: row) {
+	display: flex;
+	justify-content: $jc;
+	align-items: $ai;
+	flex-direction: $drn;
+}
+
+@mixin grid($cln1, $cln2, $row1, $row2, $ji: stretch, $aI: stretch) {
+	display: grid;
+	grid-template-columns: $cln1 $cln2;
+	grid-template-rows: $row1 $row2;
+	justify-items: $ji;
+	align-items: $aI;
+}
+
+@mixin border($width: 1px, $type: solid, $color: white) {
+	border: $width, $type, $color;
+}

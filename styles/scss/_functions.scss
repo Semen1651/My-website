@@ -1,0 +1,7 @@
+@function vw($a, $b: 1280, $multiplayer: 100) {
+	@return ($a / $b) * $multiplayer * 1vw;
+}
+
+@function vh($a, $b: 678, $multiplayer: 100) {
+	@return ($a / $b) * $multiplayer * 1vh;
+}

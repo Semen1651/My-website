@@ -1,0 +1,31 @@
+@use 'variables' as *;
+@use 'functions' as *;
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: linear-gradient(
+		130deg,
+		color-mix(in oklch, $light-blue 30%, $dark-blue 70%) 67%,
+		color-mix(in oklch, $light-blue 80%, $dark-blue 20%) 33%
+	);
+	background-attachment: fixed;
+}
+
+h1,
+a,
+figcaption {
+	color: white;
+}
+
+p {
+	color: $light-gray;
+}
+
+.container {
+	max-width: vw(1200, 1280);
+	min-height: 100vh;
+	margin: 0 auto;
+}

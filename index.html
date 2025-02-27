@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Semyon Taranenko</title>
+		<link rel="stylesheet" href="/styles/css/main.min.css" />
+		<script src="/scripts/main.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<maim class="main">
+				<section id="hero_section" class="hero_section">
+					<ul class="lang-list">
+						<li class="langList-item langItem-en">
+							<button
+								class="button-lang btnLang-en"
+								type="button"
+								title="English"
+								onclick="changeLanguage('en')"
+							>
+								<img
+									class="flag-image img-en"
+									src="/icons/English.svg"
+									alt="English"
+									width=""
+									height=""
+									loading="lazy"
+								/>
+							</button>
+						</li>
+						<li class="langList-item langItem-pl">
+							<button
+								class="button-lang btnLang-pl"
+								type="button"
+								title="Polski"
+								onclick="changeLanguage('pl')"
+							>
+								<img
+									class="flag-image img-pl"
+									src="/icons/Polski.svg"
+									alt="Polski"
+									width=""
+									height=""
+									loading="lazy"
+								/>
+							</button>
+						</li>
+						<li class="langList-item langItem-ru">
+							<button
+								class="button-lang btnLang-ru"
+								type="button"
+								title="Русский"
+								onclick="changeLanguage('ru')"
+							>
+								<img
+									class="flag-image img-ru"
+									src="/icons/Русский.svg"
+									alt="Русский"
+									width=""
+									height=""
+									loading="lazy"
+								/>
+							</button>
+						</li>
+					</ul>
+					<img
+						class="hero-image"
+						src="/images/hero-image.webp"
+						alt="Semyon Taranenko"
+						width=""
+						height=""
+						loading="lazy"
+					/>
+					<div class="hero-content">
+						<h1 class="greeting-name">Semyon Taranenko</h1>
+						<a class="aboutMe-link" href="#aboutMe_section">ABOUT ME</a>
+					</div>
+				</section>
+
+				<section id="aboutMe_section" class="aboutMe_section">
+					<img
+						class="aboutMe-image"
+						src="/images/aboutMe-image.webp"
+						alt="i and computer"
+						width=""
+						height=""
+						loading="lazy"
+					/>
+					<div class="text-wrap">
+						<p class="aboutMe-info print"></p>
+					</div>
+				</section>
+
+				<section class="mySkills_section" id="mySkills_section">
+					<figcaption class="mySkills-title"></figcaption>
+					<img
+						class="mySkills-image"
+						src="/images/mySkills-image .png"
+						alt="coding"
+						width="570"
+						height="570"
+						loading="lazy"
+					/>
+					<div class="skillsIcon-box">
+						<button class="arrow-button arrLeft-button" type="button">
+							<svg
+								class="arrow-svg arrLeft-svg"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 128 128"
+							>
+								<path
+									d="M64 .3C28.7.3 0 28.8 0 64s28.7 63.7 64 63.7 64-28.5 64-63.7S99.3.3 64 .3zm0 121C32.2 121.3 6.4 95.7 6.4 64 6.4 32.3 32.2 6.7 64 6.7s57.6 25.7 57.6 57.3c0 31.7-25.8 57.3-57.6 57.3zm1.3-82.8L41.6 64l23.6 25.5h13.5L54.4 64l24.4-25.5H65.3z"
+								/>
+							</svg>
+						</button>
+						<img
+							src="/icons/NodeJs.svg"
+							class="skill-icon"
+							alt="HTML5"
+							width="450"
+							height="450"
+							loading="lazy"
+						/>
+						<button class="arrow-button arrRight-button" type="button">
+							<svg
+								class="arrow-svg arrRight-svg"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 128 128"
+							>
+								<path
+									d="M64 0C28.7 0 0 28.7 0 64s28.7 64 64 64 64-28.7 64-64S99.3 0 64 0zm0 121.6C32.2 121.6 6.4 95.8 6.4 64S32.2 6.4 64 6.4s57.6 25.8 57.6 57.6-25.8 57.6-57.6 57.6zM49.2 38.4 73.6 64 49.2 89.6h13.5L86.4 64 62.7 38.4H49.2z"
+								/>
+							</svg>
+						</button>
+					</div>
+				</section>
+			</maim>
+		</div>
+	</body>
+</html>
