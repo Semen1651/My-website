@@ -95,21 +95,22 @@ document
 	})
 
 let skillIndex = 0
+const baseURL = '"https://semen1651.github.io/My-website/"'
 const skillIconsList = [
-	'icons/HTML5.svg',
-	'icons/CSS3.svg',
-	'icons/Sass.svg',
-	'icons/JavaScript.svg',
-	'icons/TypeScript.svg',
-	'icons/NodeJs.svg',
-	'icons/npm.svg',
-	'icons/Git.svg',
-	'icons/Gulp.svg',
-	'icons/Vite.svg',
-	'icons/webpack.svg',
-	'icons/React.svg',
-	'icons/nextJs.svg',
-	'icons/Docker.svg',
+	`${baseURL}icons/HTML5.svg`,
+	`${baseURL}icons/CSS3.svg`,
+	`${baseURL}icons/Sass.svg`,
+	`${baseURL}icons/JavaScript.svg`,
+	`${baseURL}icons/TypeScript.svg`,
+	`${baseURL}icons/NodeJs.svg`,
+	`${baseURL}icons/npm.svg`,
+	`${baseURL}icons/Git.svg`,
+	`${baseURL}icons/Gulp.svg`,
+	`${baseURL}icons/Vite.svg`,
+	`${baseURL}icons/webpack.svg`,
+	`${baseURL}icons/React.svg`,
+	`${baseURL}icons/nextJs.svg`,
+	`${baseURL}icons/Docker.svg`,
 ]
 
 const skillIcon = document.querySelector('.skill-icon')
