@@ -95,7 +95,7 @@ document
 	})
 
 let skillIndex = 0
-const baseURL = '"https://semen1651.github.io/My-website/"'
+const baseURL = 'https://semen1651.github.io/My-website/'
 const skillIconsList = [
 	`${baseURL}icons/HTML5.svg`,
 	`${baseURL}icons/CSS3.svg`,
