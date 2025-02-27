@@ -32,7 +32,7 @@ let isTyping = false
 let aboutMeText
 const typeElement = document.querySelector('.type')
 
-function type(element, text, speed, callback) {
+function typing(element, text, speed, callback) {
 	let i = 0
 	element.textContent = ''
 	isTyping = true
@@ -86,7 +86,7 @@ document
 			return
 		}
 
-		print(typeElement, aboutMeText, 100, () => {
+		typing(typeElement, aboutMeText, 100, () => {
 			document.querySelector('#mySkills_section').scrollIntoView({
 				block: 'end',
 				behavior: 'smooth',
