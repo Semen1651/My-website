@@ -4,7 +4,7 @@
 
 .hero_section {
 	height: $max;
-	@include grid(vw(465), vw(735), vh(112), vh(566), center, center);
+	@include grid(vw(465), vw(735), vh(112), vh(566));
 	grid-template-areas:
 		'image flags'
 		'image content';
@@ -12,7 +12,7 @@
 }
 
 .lang-list {
-	display: flex;
+	@include flexbox(inline-flex);
 	grid-area: flags;
 	justify-self: end;
 	margin-right: vw(32.5);
@@ -20,12 +20,12 @@
 }
 
 .button-lang {
-	display: flex;
-	transition: transform 0.2s;
+	@include flexbox;
+	transition: $transition-element;
 
 	&:hover {
 		cursor: pointer;
-		transform: scale(1.2);
+		transform: $scale-element;
 	}
 
 	&:active {
@@ -42,31 +42,35 @@
 	width: vw(400);
 	height: vh(600);
 	grid-area: image;
+	@include border($dark-gray);
 }
 
 .hero-content {
-	@include flexbox($ai: center, $drn: column);
+	@include flexbox($drn:column, $ai: center);
 	grid-area: content;
 	gap: vh(5);
 }
 
 .greeting-name {
-	font-size: vw(85);
+	font-size: vw(81);
 	text-decoration: underline vw(0.5);
-	text-underline-offset: vh(4, 678);
+	text-underline-offset: vh(4);
 }
 
 .aboutMe-link {
 	font-size: vw(23);
+	background-color: transparent;
 	padding: vw(5);
 	@include border;
-	background-color: transparent;
-	transition: color 0.2s, border-color 0.2s, transform 0.2s;
+	transition: 
+	transform $transition-element, 
+	color $transition-element, 
+	border-color $transition-element;
 
 	&:hover {
 		cursor: pointer;
-		color: $light-gray;
-		border-color: $light-gray;
+		color: $dark-gray;
+		border-color: $dark-gray;
 		transform: scale(1.1);
 	}
 
@@ -81,13 +85,17 @@
 
 .aboutMe_section {
 	height: $max;
-	@include flexbox(space-around, center);
-	gap: vw(10);
+	@include grid(vw(475), vw(725), vh(678), 0);
+	grid-template-areas: 
+	'text image';
 	margin-bottom: $section-indent;
 }
 
 .text-wrap {
-	width: vw(400);
+	width: vw(410);
+	height: vh(600);
+	@include flexbox($ai: center);
+	grid-area: text;
 }
 
 .aboutMe-info {
@@ -96,56 +104,70 @@
 }
 
 .aboutMe-image {
-	width: vw(750);
-	height: vh(500);
-	order: 1;
+	width: vw(660);
+	height: vh(440);
+	grid-area: image;
+	@include border($dark-gray);
 }
 
 // -- MY SKILLS
 
 .mySkills_section {
 	height: $max;
-	@include grid(vw(550), vw(650), vh(108), vh(570), center, center);
+	@include grid(vw(565), vw(635), vh(108), vh(570));
 	grid-template-areas:
 		'title title'
 		'image skillIcon';
+}
+
+.mySkills-title {
+	font-size: vw(45);
+	grid-area: title;
+	color: $light-gray;
 }
 
 .mySkills-image {
 	width: vw(500);
 	height: vh(500);
 	grid-area: image;
+	@include border($dark-gray);
+}
+
+.arrow-button {
+	width: vw(45);
+	height: vh(45);
+	transition: 
+	transform $transition-element, 
+	color $transition-element,
+	border-color $transition-element;
+
+	&:hover{
+		transform: $scale-element;
+	}
+}
+
+.arrow-svg {
+	fill: $light-gray;
+
+	&:hover {
+		cursor: pointer;
+		fill: $dark-gray;
+	}
+	
+	&:active {
+		fill: black;
+	}
 }
 
 .skillsIcon-box {
+	width: vw(570);
+	height: vh(400);
+	@include flexbox($jc: space-around, $ai: center);
 	grid-area: skillIcon;
-	@include flexbox(space-around, center);
 	gap: vw(5);
 }
 
 .skill-icon {
-	width: vw(500);
-	height: vh(500);
-}
-
-.mySkills-title {
-	font-size: vw(50);
-	padding: vw(5);
-	grid-area: title;
-}
-
-.arrow-button {
-	width: 50px;
-	height: 50px;
-}
-
-.arrow-svg {
-	fill: #d1d1d1;
-
-	&:hover {
-		cursor: pointer;
-	}
-	&:active {
-		fill: black;
-	}
+	width: vw(400);
+	height: vh(400);
 }

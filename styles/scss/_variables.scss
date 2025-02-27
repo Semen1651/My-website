@@ -1,9 +1,14 @@
 @use 'functions' as *;
 
+$max: 100vh;
+
 $light-blue: #4b6cb7;
 $dark-blue: #182848;
 $light-gray: #d1d1d1;
+$dark-gray: #8f8f8f;
+
+$transition-element: 0.2s;
+
+$scale-element: scale(1.2);
 
 $section-indent: vh(70, 678);
-
-$max: 100vh;

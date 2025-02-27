@@ -30,9 +30,9 @@ const translations = {
 let typingTimeout
 let isTyping = false
 let aboutMeText
-const printElement = document.querySelector('.print')
+const typeElement = document.querySelector('.type')
 
-function print(element, text, speed, callback) {
+function type(element, text, speed, callback) {
 	let i = 0
 	element.textContent = ''
 	isTyping = true
@@ -55,7 +55,7 @@ function print(element, text, speed, callback) {
 function changeLanguage(lang) {
 	clearTimeout(typingTimeout)
 
-	printElement.textContent = ''
+	typeElement.textContent = ''
 	document.querySelector('.greeting-name').textContent =
 		translations[lang].greetingName
 	document.querySelector('.aboutMe-link').textContent =
@@ -82,11 +82,11 @@ document
 			behavior: 'smooth',
 		})
 
-		if (printElement.textContent === aboutMeText) {
+		if (typeElement.textContent === aboutMeText) {
 			return
 		}
 
-		print(printElement, aboutMeText, 100, () => {
+		print(typeElement, aboutMeText, 100, () => {
 			document.querySelector('#mySkills_section').scrollIntoView({
 				block: 'end',
 				behavior: 'smooth',
