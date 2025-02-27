@@ -96,20 +96,20 @@ document
 
 let skillIndex = 0
 const skillIconsList = [
-	'/icons/HTML5.svg',
-	'/icons/CSS3.svg',
-	'/icons/Sass.svg',
-	'/icons/JavaScript.svg',
-	'/icons/TypeScript.svg',
-	'/icons/NodeJs.svg',
-	'/icons/npm.svg',
-	'/icons/Git.svg',
-	'/icons/Gulp.svg',
-	'/icons/Vite.svg',
-	'/icons/webpack.svg',
-	'/icons/React.svg',
-	'/icons/nextJs.svg',
-	'/icons/Docker.svg',
+	'icons/HTML5.svg',
+	'icons/CSS3.svg',
+	'icons/Sass.svg',
+	'icons/JavaScript.svg',
+	'icons/TypeScript.svg',
+	'icons/NodeJs.svg',
+	'icons/npm.svg',
+	'icons/Git.svg',
+	'icons/Gulp.svg',
+	'icons/Vite.svg',
+	'icons/webpack.svg',
+	'icons/React.svg',
+	'icons/nextJs.svg',
+	'icons/Docker.svg',
 ]
 
 const skillIcon = document.querySelector('.skill-icon')
