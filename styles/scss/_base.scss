@@ -1,6 +1,11 @@
 @use 'variables' as *;
 @use 'functions' as *;
 
+::selection{
+	color: $light-gray;
+	background-color: $light-blue;
+}
+
 html {
 	scroll-behavior: smooth;
 }

@@ -7,7 +7,7 @@ const translations = {
 		greetingName: 'Semyon Taranenko',
 		moreLink: 'ABOUT ME',
 		aboutMeInfo:
-			'Hi, I was born on December 9, 2006, and from early childhood, I had a deep interest in everything related to electronics and the internet. Smartphones, tablets, computers, and laptops—although all of this was intuitively understandable to me and even somewhat ordinary, it still brought me great joy and an endless curiosity for the field of information technology. This passion eventually grew into learning programming, which became my main hobby, and soon, as I realized, my desired profession.',
+			'Hi, I was born on December 9th, 2006, and from early childhood, I had a deep interest in everything related to electronics and the internet. Smartphones, tablets, computers, and laptops—although all of this was intuitively understandable to me and even somewhat ordinary, it still brought me great joy and an endless curiosity for the field of information technology. This passion eventually grew into learning programming, which became my main hobby, and soon, as I realized, my desired profession.',
 		mySkillsTitle: 'MY SKILLS',
 	},
 
@@ -86,7 +86,7 @@ document
 			return
 		}
 
-		typing(typeElement, aboutMeText, 100, () => {
+		typing(typeElement, aboutMeText, 50, () => {
 			document.querySelector('#mySkills_section').scrollIntoView({
 				block: 'end',
 				behavior: 'smooth',
