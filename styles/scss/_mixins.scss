@@ -1,4 +1,4 @@
-@mixin grid($cln1, $cln2, $cln3, $row1, $row2, $ji: center, $aI: center) {
+@mixin grid($cln1, $cln2, $cln3, $row1, $row2, $pi: center center) {
 	display: grid;
 	grid-template-columns: $cln1 $cln2 $cln3;
 	grid-template-rows: $row1 $row2;
@@ -9,8 +9,7 @@
 @mixin flexbox($drn: row, $jc: stretch, $ai: stretch) {
 	display: flex;
 	flex-direction: $drn;
-	justify-content: $jc;
-	align-items: $ai;
+	place-items: $pi;
 }
 
 @mixin border($color: white, $width: 1px, $type: solid) {
