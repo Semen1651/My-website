@@ -2,16 +2,16 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<base href='https://semen1651.github.io/My-website/'>
+		<base href="https://semen1651.github.io/My-website/" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title>Semyon Taranenko</title>
 		<link rel="stylesheet" href="styles/css/main.min.css" />
 		<script src="scripts/main.min.js" defer></script>
 	</head>
 	<body>
-		<div class="container">
-			<maim class="main">
+		<maim class="main">
+			<div class="container">
 				<section id="hero_section" class="hero_section">
 					<div class="lang-box">
 						<button
@@ -75,7 +75,7 @@
 						alt="i and computer"
 						loading="lazy"
 					/>
-						<p class="aboutMe-info type"></p>
+					<p class="aboutMe-info type"></p>
 				</section>
 
 				<section class="mySkills_section" id="mySkills_section">
@@ -87,7 +87,11 @@
 						loading="lazy"
 					/>
 					<div class="skillsIcon-box">
-						<button class="arrow-button arrLeft-button" type="button">
+						<button
+							class="arrow-button arrLeft-button"
+							aria-label="предыдущая иконка"
+							type="button"
+						>
 							<svg
 								class="arrow-svg arrLeft-svg"
 								xmlns="http://www.w3.org/2000/svg"
@@ -101,12 +105,16 @@
 						<img
 							src="icons/NodeJs.svg"
 							class="skill-icon"
-							alt="NodeJs"
+							alt="Technologies-icons"
 							width=""
 							height=""
 							loading="lazy"
 						/>
-						<button class="arrow-button arrRight-button" type="button">
+						<button
+							class="arrow-button arrRight-button"
+							aria-label="предыдущая иконка"
+							type="button"
+						>
 							<svg
 								class="arrow-svg arrRight-svg"
 								xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +127,7 @@
 						</button>
 					</div>
 				</section>
-			</maim>
-		</div>
+			</div>
+		</maim>
 	</body>
 </html>

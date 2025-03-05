@@ -5,7 +5,7 @@
 .hero_section {
 	height: $section;
 	@include grid(vw(400), vw(600), vw(200), vh(100), vh(578));
-	margin-bottom: $sctn-margin;
+	margin-bottom: $scn-margin;
 }
 
 .lang-box {
@@ -73,7 +73,7 @@
 .aboutMe_section {
 	height: $section;
 	@include grid(vw(475), vw(710), 0, vh(678), 0);
-	margin-bottom: $sctn-margin;
+	margin-bottom: $scn-margin;
 }
 
 .aboutMe-info {
@@ -97,7 +97,7 @@
 }
 
 .mySkills-title {
-	grid-area: 1 / 1 / 2 / 3 ;
+	grid-area: 1 / 1 / 2 / 3;
 	font-size: vw(45);
 	color: $light-gray;
 }
@@ -120,7 +120,7 @@
 		cursor: pointer;
 		fill: $dark-gray;
 	}
-	
+
 	&:active {
 		fill: black;
 	}
