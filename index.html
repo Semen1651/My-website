@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<base href='https://semen1651.github.io/My-website/'>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<title>Semyon Taranenko</title>
 		<link rel="stylesheet" href="styles/css/main.min.css" />
 		<script src="scripts/main.min.js" defer></script>
@@ -13,53 +13,49 @@
 		<div class="container">
 			<maim class="main">
 				<section id="hero_section" class="hero_section">
-					<ul class="lang-list">
-						<li class="langList-item langItem-en">
-							<button
-								class="button-lang btnLang-en"
-								type="button"
-								title="English"
-								onclick="changeLanguage('en')"
-							>
-								<img
-									class="flag-image img-en"
-									src="icons/English.svg"
-									alt="English"
-									loading="lazy"
-								/>
-							</button>
-						</li>
-						<li class="langList-item langItem-pl">
-							<button
-								class="button-lang btnLang-pl"
-								type="button"
-								title="Polski"
-								onclick="changeLanguage('pl')"
-							>
-								<img
-									class="flag-image img-pl"
-									src="icons/Polski.svg"
-									alt="Polski"
-									loading="lazy"
-								/>
-							</button>
-						</li>
-						<li class="langList-item langItem-ru">
-							<button
-								class="button-lang btnLang-ru"
-								type="button"
-								title="Русский"
-								onclick="changeLanguage('ru')"
-							>
-								<img
-									class="flag-image img-ru"
-									src="icons/Русский.svg"
-									alt="Русский"
-									loading="lazy"
-								/>
-							</button>
-						</li>
-					</ul>
+					<div class="lang-box">
+						<button
+							class="button-lang btnLang-en"
+							type="button"
+							title="English"
+							onclick="changeLanguage('en')"
+						>
+							<img
+								class="flag-image img-en"
+								src="icons/English.svg"
+								alt="English"
+								loading="lazy"
+							/>
+						</button>
+
+						<button
+							class="button-lang btnLang-pl"
+							type="button"
+							title="Polski"
+							onclick="changeLanguage('pl')"
+						>
+							<img
+								class="flag-image img-pl"
+								src="icons/Polski.svg"
+								alt="Polski"
+								loading="lazy"
+							/>
+						</button>
+
+						<button
+							class="button-lang btnLang-ru"
+							type="button"
+							title="Русский"
+							onclick="changeLanguage('ru')"
+						>
+							<img
+								class="flag-image img-ru"
+								src="icons/Русский.svg"
+								alt="Русский"
+								loading="lazy"
+							/>
+						</button>
+					</div>
 					<img
 						class="hero-image"
 						src="images/hero-image.webp"
@@ -79,9 +75,7 @@
 						alt="i and computer"
 						loading="lazy"
 					/>
-					<div class="text-wrap">
 						<p class="aboutMe-info type"></p>
-					</div>
 				</section>
 
 				<section class="mySkills_section" id="mySkills_section">

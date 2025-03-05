@@ -1,13 +1,13 @@
-@mixin grid($cln1, $cln2, $row1, $row2, $ji: center, $aI: center) {
+@mixin grid($cln1, $cln2, $cln3, $row1, $row2, $ji: center, $aI: center) {
 	display: grid;
-	grid-template-columns: $cln1 $cln2;
+	grid-template-columns: $cln1 $cln2 $cln3;
 	grid-template-rows: $row1 $row2;
 	justify-items: $ji;
 	align-items: $aI;
 }
 
-@mixin flexbox($display: flex, $drn: row, $jc: normal, $ai: normal) {
-	display: $display;
+@mixin flexbox($drn: row, $jc: stretch, $ai: stretch) {
+	display: flex;
 	flex-direction: $drn;
 	justify-content: $jc;
 	align-items: $ai;

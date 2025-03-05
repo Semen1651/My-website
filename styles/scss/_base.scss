@@ -1,13 +1,9 @@
 @use 'variables' as *;
 @use 'functions' as *;
 
-::selection{
+::selection {
 	color: $light-gray;
 	background-color: $light-blue;
-}
-
-*:focus{
-	outline: vw(2) solid $dark-gray
 }
 
 html {
